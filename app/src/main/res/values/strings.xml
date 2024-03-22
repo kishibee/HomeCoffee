@@ -1,4 +1,5 @@
 <resources>
+        <string name="app_name">Home Coffee</string>
         <string name="placeholder_search">Cari kopi pilihanmu!</string>
         <string name="category_all">All</string>
         <string name="category_americano">Americano</string>
