@@ -44,9 +44,9 @@ fun Search(modifier: Modifier = Modifier) {
             containerColor = MaterialTheme.colorScheme.background
         ),
         modifier = modifier
-            .padding(16.dp)
+            .padding(12.dp)
             .fillMaxWidth()
-            .heightIn(min = 48.dp)
+            .heightIn(min = 40.dp)
         ) {
     }
 }
