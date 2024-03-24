@@ -89,7 +89,8 @@ fun CategoryRow(modifier: Modifier = Modifier) {
 @Composable
 fun MenuRow(
     listMenu: List<Menu>,
-    modifier: Modifier = Modifier) {
+    modifier: Modifier = Modifier,
+) {
     LazyRow(
         horizontalArrangement = Arrangement.spacedBy(16.dp),
         contentPadding = PaddingValues(horizontal = 16.dp),
@@ -99,6 +100,13 @@ fun MenuRow(
             MenuItem(menu)
         }
     }
+}
+
+@Composable
+fun BottomBar(
+    modifier: Modifier = Modifier
+) {
+
 }
 @Preview(showBackground = true, device = Devices.PIXEL_4, showSystemUi = true)
 @Composable
