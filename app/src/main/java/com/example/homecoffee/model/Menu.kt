@@ -1,5 +1,7 @@
 package com.example.homecoffee.model
 
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
 import com.example.homecoffee.R
 
 data class Menu(
@@ -11,6 +13,8 @@ data class Menu(
 val dummyMenu = listOf(
     Menu(R.drawable.menu1, "Tiramisu Coffee Milk", "Rp 28.000"),
     Menu(R.drawable.menu2, "Pumpkin Spice Latte", "Rp 18.000"),
-    Menu(R.drawable.menu3, "Light Capuccino", "Rp 15.000"),
+    Menu(R.drawable.menu3, "Light Cappuccino", "Rp 15.000"),
     Menu(R.drawable.menu4, "Choco Creamy Latte", "Rp 20.000")
 )
+
+val dummyBestMenu = dummyMenu.shuffled()
