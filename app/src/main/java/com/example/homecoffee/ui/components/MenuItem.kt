@@ -29,7 +29,7 @@ fun MenuItem(
     ) {
     Card(
         modifier = modifier.width(140.dp),
-        shape = RoundedCornerShape(8.dp),
+        shape = RoundedCornerShape(30.dp),
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.background
         ),
