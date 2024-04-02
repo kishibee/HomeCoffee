@@ -13,22 +13,35 @@ import androidx.compose.material3.SearchBar
 import androidx.compose.material3.SearchBarDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.homecoffee.R
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Search(modifier: Modifier = Modifier) {
+    var input by remember { mutableStateOf("") }
+    var active by remember { mutableStateOf(false) }
     SearchBar(
-        query = "",
-        onQueryChange = {},
-        onSearch = {},
-        active = false,
-        onActiveChange ={},
+        query = input,
+        onQueryChange = { userInput ->
+            input = userInput
+        },
+        onSearch = {
+             active = false
+        },
+        active = active,
+        onActiveChange ={
+              active = it
+        },
         leadingIcon = {
             Icon(
                 imageVector = Icons.Default.Search,

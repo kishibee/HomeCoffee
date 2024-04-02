@@ -164,7 +164,5 @@ fun BottomBar(
 @Preview(showBackground = true, device = Devices.PIXEL_4, showSystemUi = true)
 @Composable
 fun HomeCofeeAppPreview() {
-    HomeCoffeeTheme {
         HomeCoffeeApp()
-    }
 }
